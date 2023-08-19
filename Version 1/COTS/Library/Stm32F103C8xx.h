@@ -1,5 +1,5 @@
-#ifndef STM32F446XX_H
-#define STM32F446XX_H
+#ifndef STM32F103C8XX_H
+#define STM32F103C8XX_H
 
 /************************       Various Memoreis Base Adresses       ************************/
 
