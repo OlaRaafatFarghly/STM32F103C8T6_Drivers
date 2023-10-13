@@ -1,0 +1,88 @@
+/*
+ * MRCC_private.h
+ *
+ *  Created on: Oct 12, 2023
+ *      Author: pc castle
+ */
+
+#ifndef MCAL_MRCC_PRIVATE_H_
+#define MCAL_MRCC_PRIVATE_H_
+
+typedef enum
+{
+	HSION,
+	HSIRDY,
+	HSITRIM0,
+	HSITRIM1,
+	HSITRIM2,
+	HSITRIM3,
+	HSITRIM4,
+	HSEON=16,
+	HSERDY,
+	HSEBYP,
+	CSSON,
+	PLLON=24,
+	PLLRDY,
+	PLL2ON,
+	PLL2RDY,
+	PLL3ON,
+	PLL3RDY
+}CR_t;
+
+typedef enum
+{
+	AFIOEN=0,
+	IOPAEN=2,
+	IOPBEN,
+	IOPCEN,
+	IOPDEN,
+	IOPEEN,
+	ADC1EN=9,
+	ADC2EN,
+	TIM1EN,
+	SPI1EN,
+	USART1EN=14,
+}APB2_Peripheral_EN_t;
+typedef enum
+{
+	TIM2EN=0,
+	TIM3EN,
+	TIM4EN,
+	TIM5EN,
+	TIM6EN,
+	TIM7EN,
+	WWDGEN=11,
+	SPI2EN=14,
+	SPI3EN,
+	USART2EN=17,
+	USART3EN,
+	UART4EN,
+	UART5EN,
+	I2C1EN,
+	I2C2EN,
+	CAN1EN=25,
+	CAN2EN,
+	BKPEN,
+	PWREN,
+	DACEN
+}APB1_Peripheral_EN_t;
+
+typedef enum
+{
+	DMA1EN=0,
+	DMA2EN,
+	SRAMEN,
+	FLITFEN=4,
+	CRCEN=6,
+	OTGFSEN=12,
+	ETHMACEN=14,
+	ETHMACTXEN,
+	ETHMACRXEN,
+}AHB_Peripheral_EN_t;
+#define SW0 0
+#define SW1 1
+#define HSE_IS_READY 1
+#define HSI_IS_READY 1
+#define PLL_IS_READY 1
+
+#endif /* MCAL_MRCC_PRIVATE_H_ */
